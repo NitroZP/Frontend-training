@@ -1,0 +1,433 @@
+html{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+
+}
+body{
+    font-size: 1.2rem;
+    min-height: 100vh;
+    padding: 0px;
+
+}
+.gl_app{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.principal-grid-container{
+    display: grid;
+    width: 100%;
+    margin-left: 100%;
+    margin-right: 100%;
+    height: auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "widget widget widget"
+                        "footert footert footert"
+                        "footer footer footer";
+}
+.logo_adidas{
+    width: 70px;
+}
+.search_input{
+    width: 100px;
+}
+.glass{
+    width: 20px;
+    cursor: pointer;
+}
+.user{
+    width: 20px;
+    cursor: pointer;
+}
+.heart{
+    width: 20px;
+    cursor: pointer;
+}
+.heart:hover{
+    cursor: pointer;
+}
+.cart{
+    width: 20px;
+    cursor: pointer;
+}
+.videotennis{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.sub-grid-container1{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto 50px;
+    grid-template-areas:"wup wup wup"
+                        "logo wap wap"
+                        "logo sec sea"
+                        ;
+                        .flex-container1{
+                            grid-area: wup;
+                            display: flex;
+                            height: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: black;
+                            color: aliceblue;
+                            font-size: small;
+                            font-style: oblique;
+                        }
+                        .flex-container2{
+                            grid-area: wap;
+                            height: 30px;
+                            display: flex;
+                            justify-content: right;
+                            align-items: center;
+                        }
+                        .flex-container3{
+                            grid-area: logo;
+                            display: flex;
+                            margin-left: 35px;
+                            justify-content: left;
+                            align-items: center;
+                        }
+                        .flex-container4{
+                            grid-area: sec;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            
+                        }
+                        .flex-container5{
+                            grid-area: sea;
+                            display: flex;
+                            margin-right: 35px;
+                            justify-content: right;
+                            align-items: center;
+                            
+                        }
+.W2{
+    display: flex;
+    font-size: x-small;
+    flex-direction: row;
+    margin-right: 45px;
+    gap: 10px;
+}
+.W4{
+    display: flex;
+    font-size: small;
+    font-weight: 1000;
+    letter-spacing: 3.5px;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-color: black white;
+    scrollbar-width:1px;
+    gap: 18px;
+    width: auto;
+    text-align: center;
+}
+.WB{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    .search{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        background-color: rgb(236, 236, 236);
+        .search_input:focus{
+            outline: none;
+            border: 0px;
+        }
+        .search_input{
+            display: flex;
+            width: 100%;
+            caret-color: black;
+            border: 0px;
+            background-color:rgb(236, 236, 236) ;
+        }
+    }
+}
+}
+
+.sub-grid-container2{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:"video video video"
+                        "video video video"
+                        "text video video"
+    ;
+        .flex-container6{
+            display: flex;
+            .widget_video{
+                grid-area: video;
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 700px;
+                
+            }
+            .textvideo{
+                grid-area: text;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+                color: rgb(0, 0, 0);
+                gap: 5px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 1000;
+                
+                .as1{
+                    display: flex;
+                    justify-content: center;
+                    background-color: white;
+                    caret-color: transparent;
+                    letter-spacing: 2px;
+                    width: 130px;
+                    height: 30px;
+                }
+                .as2{
+                    background-color: white;
+                    caret-color: transparent;
+                    color: grey;
+                    display: flex;
+                    font-size: small;
+                    font-weight: 1000;
+                    letter-spacing: 1px;
+                    width: 315px;
+                    height: auto;
+                }
+                .as3{
+                    cursor: pointer;
+                    caret-color: transparent;
+                    margin-top: 10px;
+                    background-color: white;
+                    display: flex;
+                    width: 250px;
+                    height: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: x-large;
+                    font-weight: 1000;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+}
+.sub-grid-container3{
+    grid-area: widget;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    .flex-container10{
+        display:flex;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        height: auto;
+
+    .flex-container7{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container8{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-container9{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .mujer1, .hombre1, .niños1{
+            display: flex;
+            justify-content: center;
+            width: auto;
+            .imgmujer1, .imghombre1, .imgniños1{
+                width: 100%;
+                box-shadow: 1px 1px 5px black;
+            }
+        }
+        .mujer2, .hombre2, .niños2{
+            display: flex;
+            width: 100%;
+            text-align: left;
+            justify-content: center;
+            gap: 2px;
+            flex-direction: column;
+        }
+        .textmujer1, .texthombre1, .textniños1{
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+        .textmujer2, .texthombre2, .textniños2{
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: lighter;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+        .textmujer3, .texthombre3, .textniños3{
+            font-weight: 1000;
+            letter-spacing: 1px;
+            font-size: 16px;
+            text-decoration: underline;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
+}
+.sub-grid-container4{
+    grid-area: footert;
+    .flex-container11{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .opciones11{
+            display: flex;
+            justify-content: left;
+            gap: 30px;
+            margin-left: 30px;
+            height: 40px;
+            .calzado11{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: medium;
+                font-weight: 1000;
+                letter-spacing: 1px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: black;
+                color: white;
+                width: 120px;
+                cursor: pointer;
+                box-shadow: 2px 2px 3px black;
+            }
+            .ropa11{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: medium;
+                font-weight: 1000;
+                letter-spacing: 1px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: black;
+                color: white;
+                width: 120px;
+                cursor: pointer;
+                box-shadow: 2px 2px 3px black;
+            }
+            .accesorios11{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: medium;
+                font-weight: 1000;
+                letter-spacing: 1px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: black;
+                color: white;
+                width: 120px;
+                cursor: pointer;
+                box-shadow: 2px 2px 3px black;   
+            }
+        }
+        .casillas11{
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            scrollbar-width: 1px;
+            scrollbar-color: black white ;
+            justify-content: space-evenly;
+            position: relative;
+            gap: 10px;
+            .tennis1{
+                display: flex;
+                flex-direction: column;
+                width:auto;
+                .secten1-1{
+                    width: auto;
+                    .imgtenis{
+                        width: 250px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .tennis1-1{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px rgb(170, 170, 170);
+    }
+    .secten1-1{
+        display: flex;
+    }
+    .secten1-2{
+        display: flex;
+        position: absolute;
+        translate: 0% 50%;
+        transform: translate(10px,210px);
+    }
+    .secten1-3{
+        display: flex;
+        position: absolute;
+        translate: 50%  50%;
+        transform: translate(210px);
+    }
+    .tennis1-2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+    .tennis1-2-1{
+        font-size: medium;
+    }
+    .tennis1-2-2{
+        font-size: medium;
+    }
+    .text11{
+        font-size: larger;
+        font-weight: 1000;
+        letter-spacing: 1px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+.sub-grid-container5{
+    grid-area: footer;
+}
